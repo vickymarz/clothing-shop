@@ -1,9 +1,9 @@
-# women-clothing-shop
-This is an e-commerce website that enable women to purchase there desired clothes over the internet rather than at a physical location. Through this website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.
+# clothing-shop
+This is an e-commerce website that enable people to purchase there desired clothes over the internet rather than at a physical location. Through this website can process orders, accept payments, manage shipping and logistics, and provide customer service.
 
 ![screenshot](./src/Images/Screen-shoot.gif)
 
-My goal here is to Build a single page web application for women-clothing-shop-app using the React library, Click [here](https://space-travellers-booking-app.herokuapp.com/) to get a live preview of the project.
+My goal here is to Build a single page web application for clothing-shop-app using the React library, Click [here](https://space-travellers-booking-app.herokuapp.com/) to get a live preview of the project.
 
 ## Built With
 - React
