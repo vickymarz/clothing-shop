@@ -1,46 +1,76 @@
-# Getting Started with Create React App and Redux
+# women-clothing-shop
+This is an e-commerce website that enable women to purchase there desired clothes over the internet rather than at a physical location. Through this website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![screenshot](./src/Images/Screen-shoot.gif)
 
-## Available Scripts
+My goal here is to Build a single page web application for women-clothing-shop-app using the React library, Click [here](https://space-travellers-booking-app.herokuapp.com/) to get a live preview of the project.
 
-In the project directory, you can run:
+## Built With
+- React
+- GraphQL
+- Redux
+- Stylelint
+- ESlint
+- GitFlow.
+- NPM.
 
-### `npm start`
+### Prerequisites
+The basic requirements for building the executable are:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
+- VSCode or any other equivalent code editor
+- Node Package Manager (For installing packages like Lighthous, webhint & stylelint used for checking for debugging bad codes before deployment)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Getting Started
 
-### `npm test`
+#### Cloning the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone  https://github.com/vickymarz/women-clothing-shop.git <Your-Build-Directory>
+```
+## Getting packages and dependencies
+To get all package modules required to build the project run:
+```
+npm install
+```
+every package module required to build the project is listed in the package.json file. this is used as a reference to get all dependencies.
 
-### `npm run build`
+## Building
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To build the project run:
+```
+npm run build
+```
+after you run this sucessfully you'd locate the build from in the ```build``` folder located from the parent directory of the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the program on a browser through a server run this command in your cli
+```
+npm start
+```
+This should open the page in your localhost on port 3000. then you'd be able to view the built page generated using webpack.
 
-### `npm run eject`
+## 🤝 Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Feel free to check the [issues page](../../issues/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+👤 **Victor Okoroji**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- GitHub: [@githubhandle](https://github.com/vickymarz)
+- Twitter: [@twitterhandle](https://twitter.com/Vicky_marz)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/victorebubeokoroji/)
 
-## Learn More
+## Show your support
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Give a ⭐️ if you like this project!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
+
+- Scandiweb
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
