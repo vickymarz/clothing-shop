@@ -1,14 +1,34 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Kids from './Pages/Kids';
+import Men from './Pages/Men';
+import Women from './Pages/Women';
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Women />,
+    children: [
+      {
+        path: 'women',
+        element: <Women />
+      }
+    ]
+  },
+  {
+    path: 'men',
+    element: <Men />,
+  },
+  {
+    path: 'kids',
+    element: <Kids />,
+  }
+])
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Counter />
-      </header>
-    </div>
+      <RouterProvider router={router} />
   );
 }
 
