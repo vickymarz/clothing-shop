@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import logo from '../../assets/images/logo.png'
+import Currency from './Currency'
 
 const Header = () => {
   return (
@@ -8,6 +9,7 @@ const Header = () => {
     <header>
         <Nav />
         <img src={logo} alt='logo' />
+        <Currency />
     </header>
 
     </>
