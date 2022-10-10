@@ -30,14 +30,14 @@ const Currency = () => {
       </option>
     ))
 
-  return (
+    return (
         <select value={option} onChange={(e) => setOption(e.target.value)}>
            <option value={option}>
              {symbol}
            </option>
            {currencies}
         </select>
-  )
+    )
 }
 
 export default Currency
