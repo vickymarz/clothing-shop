@@ -1,4 +1,5 @@
 import React from 'react'
+import CategoryName from '../app/components/CategoryName'
 import Cloth from '../app/components/Cloth'
 import clothImg from '../assets/images/product.png'
 
@@ -50,6 +51,7 @@ const Women = () => {
 
   return (
     <>
+    <CategoryName />
       <div>{clothList}</div>
     </>
   )
