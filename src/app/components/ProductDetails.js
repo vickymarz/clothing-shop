@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const ProductDetails = ({brand, amount}) => {
   return (
@@ -23,6 +24,10 @@ const ProductDetails = ({brand, amount}) => {
           <span>
             <input type="color" value='red'/>
           </span>
+        </div>
+        <div>
+        <Button children='VIEW BAG'/>
+        <Button children='CHECK OUT'/>
         </div>
     </div>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 const Counter = () => {
   return (
     <div>
-    <div className={styles.row}>
+    {/* <div className={styles.row}>
       <button
         className={styles.button}
         aria-label="Decrement value"
@@ -45,7 +45,8 @@ const Counter = () => {
       >
         Add If Odd
       </button>
-    </div>
+    </div> */}
+    counter
   </div>
   )
 }

@@ -1,4 +1,6 @@
 import React from 'react'
+import Counter from './Counter'
+import ProductDetails from './ProductDetails'
 import ProductImage from './ProductImage'
 
 const CartStore = () => {
@@ -9,7 +11,11 @@ const CartStore = () => {
            3 items
         </span>
         <div>
-            <ProductImage />
+            <ProductDetails />
+            <span>
+                <Counter />
+                <ProductImage />
+            </span>
         </div>
     </div>
   )
