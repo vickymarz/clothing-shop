@@ -14,8 +14,9 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        path: 'women',
-        element: <Women />
+        path: '/',
+        element: <Women />,
+        
       },
       {
         path: 'men',
@@ -24,9 +25,10 @@ const router = createBrowserRouter([
       {
         path: 'kids',
         element: <Kids />,
-      }
+      },
     ]
   }
+
 ])
 
 function App() {

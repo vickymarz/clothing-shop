@@ -3,6 +3,7 @@ import Nav from './Nav'
 import logo from '../../assets/images/logo.png'
 import Currency from './Currency'
 import Cart from './Cart'
+import { Outlet } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
         <Cart />
         </div>
     </header>
-
+    <Outlet />
     </>
   )
 }

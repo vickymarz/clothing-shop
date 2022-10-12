@@ -5,7 +5,7 @@ const Cloth = ({brand, amount, product}) => {
     <div>
         <img src={product} alt={brand} />
         <div>
-            <p>{product}</p>
+            <p>{brand}</p>
             <p>{amount}</p>
         </div>
     </div>

@@ -1,14 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from '../../css/nav.module.css'
-import { Outlet } from 'react-router-dom'
 
 const Nav = () => {
 
     const nav = [
         {
             id: 1,
-            path: 'women',
+            path: '/',
             children: 'Women',
         },
         {
@@ -24,13 +23,18 @@ const Nav = () => {
     ]
 
     const navigation = nav.map(({id, path, children}) => (
-       <NavLink key={id} to={path} children={children} className={({isActive}) => isActive ? styles.active : styles.inactive}/>
+        <li>
+            <NavLink key={id} to={path} className={({isActive}) => isActive ? styles.active : styles.inactive} end>
+                {children}
+            </NavLink>
+        </li>
     ))
 
   return (
     <nav>
-        {navigation}
-        <Outlet />
+        <ul>
+            {navigation}
+        </ul>
     </nav>
   )
 }

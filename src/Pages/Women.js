@@ -1,5 +1,6 @@
 import React from 'react'
 import Cloth from '../app/components/Cloth'
+import clothImg from '../assets/images/product.png'
 
 
 const Women = () => {
@@ -7,38 +8,38 @@ const Women = () => {
     {
       id: 1,
       brand: 'Apollo running shot',
-      amount: $50.00,
-      product: '../../assets/images/product.png'
+      amount: '$50.00',
+      product: clothImg
     },
     {
-        id: 1,
+        id: 2,
         brand: 'Apollo running shot',
-        amount: $50.00,
-        product: '../../assets/images/product.png'
+        amount: '$50.00',
+        product: clothImg
     },
     {
-        id: 1,
+        id: 3,
         brand: 'Apollo running shot',
-        amount: $50.00,
-        product: '../../assets/images/product.png'
+        amount: '$50.00',
+        product: clothImg
     },
     {
-        id: 1,
+        id: 4,
         brand: 'Apollo running shot',
-        amount: $50.00,
-        product: '../../assets/images/product.png'
+        amount: '$50.00',
+        product: clothImg
     },
     {
-        id: 1,
+        id: 5,
         brand: 'Apollo running shot',
-        amount: $50.00,
-        product: '../../assets/images/product.png'
+        amount: '$50.00',
+        product: clothImg
     },
     {
-        id: 1,
+        id: 6,
         brand: 'Apollo running shot',
-        amount: $50.00,
-        product: '../../assets/images/product.png'
+        amount: '$50.00',
+        product: clothImg
 
     },
 ]
@@ -46,9 +47,11 @@ const Women = () => {
  const clothList = cloth.map(({id, brand, amount, product}) => (
     <Cloth key={id} brand={brand} amount={amount} product={product}/>
  ))
- 
+
   return (
-    <div>{clothList}</div>
+    <>
+      <div>{clothList}</div>
+    </>
   )
 }
 
