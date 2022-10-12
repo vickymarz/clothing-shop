@@ -1,6 +1,6 @@
 import React from 'react'
 import CategoryName from '../app/components/CategoryName'
-import Cloth from '../app/components/Cloth'
+import ProductImage from '../app/components/ProductImage'
 import clothImg from '../assets/images/product.png'
 
 
@@ -46,12 +46,12 @@ const Women = () => {
 ]
 
  const clothList = cloth.map(({id, brand, amount, product}) => (
-    <Cloth key={id} brand={brand} amount={amount} product={product}/>
+    <ProductImage key={id} brand={brand} amount={amount} product={product}/>
  ))
 
   return (
     <>
-    <CategoryName />
+      <CategoryName />
       <div>{clothList}</div>
     </>
   )

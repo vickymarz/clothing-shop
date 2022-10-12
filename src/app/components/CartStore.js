@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductImage from './ProductImage'
 
 const CartStore = () => {
   return (
@@ -7,6 +8,9 @@ const CartStore = () => {
            <h2>My Bag</h2>,
            3 items
         </span>
+        <div>
+            <ProductImage />
+        </div>
     </div>
   )
 }
