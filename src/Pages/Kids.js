@@ -1,11 +1,21 @@
 import React from 'react'
 import CategoryName from '../app/components/CategoryName'
+import ProductDescriptions from '../app/components/ProductDescriptions'
+import ProductImage from '../app/components/ProductImage'
 
-const Kids = () => {
+const Kids = ({cloth}) => {
+
+  const clothList = cloth.map(({id, brand, amount, product}) => (
+    <>
+      <ProductImage key={id} product={product}/>
+      <ProductDescriptions key={id} brand={brand} amount={amount} />
+    </>
+ ))
+
   return (
     <>
     <CategoryName />
-    <div>Kids</div>
+    <div>{clothList}</div>
     </>
   )
 }
