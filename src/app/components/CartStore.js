@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import Counter from './Counter'
+import Input from './Input'
 import ProductDescriptions from './ProductDescriptions'
 import ProductDetails from './ProductDescriptions'
 import ProductImage from './ProductImage'
@@ -30,13 +31,13 @@ const CartStore = () => {
         <div>
           <p>color:</p>
           <span>
-            <input type="color" value='red'/>
+            <Input type="color" value='red'/>
           </span>
           <span>
-            <input type="color" value='red'/>
+            <Input type="color" value='red'/>
           </span>
           <span>
-            <input type="color" value='red'/>
+            <Input type="color" value='red'/>
           </span>
         </div>
         <div>
