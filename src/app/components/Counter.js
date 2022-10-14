@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const Counter = () => {
-  return (
-    <div>
+const Counter = () => (
+  <div>
     {/* <div className={styles.row}>
       <button
         className={styles.button}
@@ -48,7 +47,6 @@ const Counter = () => {
     </div> */}
     counter
   </div>
-  )
-}
+);
 
-export default Counter
+export default Counter;

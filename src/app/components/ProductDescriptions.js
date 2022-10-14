@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const ProductDescriptions = ({brand, amount}) => {
-  return (
-    <div>
-        <p>{brand}</p>
-        <p>{amount}</p>
-    </div>
-  )
-}
+const ProductDescriptions = ({ brand, amount }) => (
+  <div>
+    <p>{brand}</p>
+    <p>{amount}</p>
+  </div>
+);
 
-export default ProductDescriptions
+ProductDescriptions.propTypes = {
+  brand: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+};
+
+export default ProductDescriptions;

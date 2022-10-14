@@ -1,11 +1,20 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const ProductImage = ({brand, product, className}) => {
-  return (
-    <div>
-        <img src={product} alt={brand} className={className}/>
-    </div>
-  )
-}
+const ProductImage = ({ brand, product, className }) => (
+  <div>
+    <img src={product} alt={brand} className={className} />
+  </div>
+);
 
-export default ProductImage
+ProductImage.propTypes = {
+  brand: PropTypes.string.isRequired,
+  product: PropTypes.string.isRequired,
+  className: PropTypes.string,
+};
+
+ProductImage.defaultProps = {
+  className: '',
+};
+
+export default ProductImage;

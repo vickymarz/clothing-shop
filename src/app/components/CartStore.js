@@ -1,27 +1,25 @@
-import React from 'react'
-import Button from './Button'
-import Counter from './Counter'
-import Input from './Input'
-import ProductDescriptions from './ProductDescriptions'
-import ProductDetails from './ProductDescriptions'
-import ProductImage from './ProductImage'
+import React from 'react';
+import Button from './Button';
+import Counter from './Counter';
+import Input from './Input';
+import ProductDescriptions from './ProductDescriptions';
+import ProductImage from './ProductImage';
 
-const CartStore = () => {
-  return (
+const CartStore = () => (
+  <div>
+    <span>
+      <h2>My Bag</h2>
+      ,
+      3 items
+    </span>
     <div>
-        <span>
-           <h2>My Bag</h2>,
-           3 items
-        </span>
-        <div>
-            <ProductDetails />
-            <span>
-                <Counter />
-                <ProductImage />
-            </span>
-            <div>
-                <ProductDescriptions />
-            <p>size:</p>
+      <span>
+        <Counter />
+        <ProductImage />
+      </span>
+      <div>
+        <ProductDescriptions />
+        <p>size:</p>
         <div>
           <span>XS</span>
           <span>X</span>
@@ -31,13 +29,13 @@ const CartStore = () => {
         <div>
           <p>color:</p>
           <span>
-            <Input type="color" value='red'/>
+            <Input type="color" value="red" />
           </span>
           <span>
-            <Input type="color" value='red'/>
+            <Input type="color" value="red" />
           </span>
           <span>
-            <Input type="color" value='red'/>
+            <Input type="color" value="red" />
           </span>
         </div>
         <div>
@@ -45,13 +43,16 @@ const CartStore = () => {
           <span>$200</span>
         </div>
         <div>
-        <Button children='VIEW BAG'/>
-        <Button children='CHECK OUT'/>
+          <Button>
+            VIEW BAG
+          </Button>
+          <Button>
+            CHECK OUT
+          </Button>
         </div>
-            </div>
-        </div>
+      </div>
     </div>
-  )
-}
+  </div>
+);
 
-export default CartStore
+export default CartStore;

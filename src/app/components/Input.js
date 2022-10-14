@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Input = ({type, value}) => {
-  return (
-    <div>
-        <input type={type} value={value}/>
-    </div>
-  )
-}
+const Input = ({ type, value }) => (
+  <div>
+    <input type={type} value={value} />
+  </div>
+);
 
-export default Input
+Input.propTypes = {
+  type: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+};
+
+export default Input;

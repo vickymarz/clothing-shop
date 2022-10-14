@@ -1,24 +1,22 @@
-import React from 'react'
-import Nav from './Nav'
-import logo from '../../assets/images/logo.png'
-import Currency from './Currency'
-import Cart from './Cart'
-import { Outlet } from 'react-router-dom'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Nav from './Nav';
+import logo from '../../assets/images/logo.png';
+import Currency from './Currency';
+import Cart from './Cart';
 
-const Header = () => {
-  return (
-    <>
+const Header = () => (
+  <>
     <header>
-        <Nav />
-        <img src={logo} alt='logo' />
-        <div>
+      <Nav />
+      <img src={logo} alt="logo" />
+      <div>
         <Currency />
         <Cart />
-        </div>
+      </div>
     </header>
     <Outlet />
-    </>
-  )
-}
+  </>
+);
 
-export default Header
+export default Header;
