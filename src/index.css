@@ -18,7 +18,11 @@ body {
   background-color: #fff;
 }
 
-nav {
-  width: 90%;
-  margin: auto;
+a {
+  text-decoration: none;
 }
+
+li {
+  list-style-type: none;
+}
+

@@ -4,10 +4,11 @@ import Nav from './Nav';
 import logo from '../../assets/images/logo.png';
 import Currency from './Currency';
 import Cart from './Cart';
+import styles from '../../css/header.module.css';
 
 const Header = () => (
   <>
-    <header>
+    <header className={styles.header}>
       <Nav />
       <img src={logo} alt="logo" />
       <div>
