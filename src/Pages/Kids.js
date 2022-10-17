@@ -23,7 +23,7 @@ const Kids = ({ cloth }) => {
 };
 
 Kids.propTypes = {
-  cloth: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])).isRequired,
+  cloth: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])).isRequired,
 };
 
 export default Kids;

@@ -1,10 +1,16 @@
 .header {
     width: 90%;
     margin: auto;
-    background-color: green;
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 80px;
+}
+
+.purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
 }

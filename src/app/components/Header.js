@@ -11,7 +11,7 @@ const Header = () => (
     <header className={styles.header}>
       <Nav />
       <img src={logo} alt="logo" />
-      <div>
+      <div className={styles.purchase}>
         <Currency />
         <Cart />
       </div>
