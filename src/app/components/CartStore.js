@@ -8,14 +8,6 @@ import ProductImage from './ProductImage';
 import styles from '../../css/cartStore.module.css';
 
 const CartStore = ({ cloth }) => {
-  // const [clothSizes, setClothSizes] = useState([]);
-
-  // useEffect(() => {
-  //   cloth.forEach(({ sizes }) => {
-  //     setClothSizes(sizes);
-  //   });
-  // }, [cloth]);
-
   const clothLists = () => {
     const productSize = cloth.map(({ sizes }) => (
       sizes.map((size) => (
@@ -28,18 +20,6 @@ const CartStore = ({ cloth }) => {
     ));
     return productSize;
   };
-
-  console.log(clothLists());
-  // const productSizes = sizes === undefined ? [] : sizes;
-  // console.log(productSizes)
-  // const productSize = clothSizes.map((size) => (
-  //   <>
-  //     {console.log(size)}
-  //     <div key={Math.random()}>
-  //       <span>{size}</span>
-  //     </div>
-  //   </>
-  // ));
 
   const clothList = cloth.map(({
     id, brand, amount,
