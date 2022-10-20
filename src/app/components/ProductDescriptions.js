@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ProductDescriptions = ({ brand, amount }) => (
-  <div>
+  <>
     <p>{brand}</p>
-    <p>{amount}</p>
-  </div>
+    <span>{amount}</span>
+  </>
 );
 
 ProductDescriptions.propTypes = {

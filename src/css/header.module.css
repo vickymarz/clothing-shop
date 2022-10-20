@@ -6,11 +6,12 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 80px;
+    background: white;
 }
 
 .purchase {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 22px;
+    gap: 30px;
 }

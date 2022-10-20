@@ -10,47 +10,52 @@ import clothImg from './assets/images/product.png';
 const cloth = [
   {
     id: 1,
-    brand: 'Apollo running shot',
+    brand: 'Apollo Running Shot',
     amount: '$50.00',
     product: clothImg,
+    sizes: ['XS', 'S', 'M', 'L'],
   },
   {
     id: 2,
-    brand: 'Apollo running shot',
+    brand: 'Apollo Running Shot',
     amount: '$50.00',
     product: clothImg,
+    sizes: ['S', 'M'],
   },
   {
     id: 3,
-    brand: 'Apollo running shot',
+    brand: 'Apollo Running Shot',
     amount: '$50.00',
     product: clothImg,
+    sizes: ['S', 'M', 'L'],
   },
   {
     id: 4,
-    brand: 'Apollo running shot',
+    brand: 'Apollo Running Shot',
     amount: '$50.00',
     product: clothImg,
+    sizes: ['XS', 'L'],
   },
   {
     id: 5,
-    brand: 'Apollo running shot',
+    brand: 'Apollo Running Shot',
     amount: '$50.00',
     product: clothImg,
+    sizes: ['XS', 'M', 'L'],
   },
   {
     id: 6,
-    brand: 'Apollo running shot',
+    brand: 'Apollo Running Shot',
     amount: '$50.00',
     product: clothImg,
-
+    sizes: ['L'],
   },
 ];
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Header />,
+    element: <Header cloth={cloth} />,
     errorElement: <Error />,
     children: [
       {

@@ -1,0 +1,42 @@
+.wrapper {
+    position: absolute;
+    width: 100%;
+    min-width: 325px;
+    right: -15px;
+    top: 50px;
+    height: 677px;
+    background-color: yellow;
+    padding: 0 16px;
+}
+
+.cartTitle {
+    margin-top: 32px;
+    font-size: 16px;
+    color: #1D1F22;
+    margin-bottom: 32px;
+}
+
+.heading {
+    font-weight: 700;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productData p {
+  font-weight: 300;
+  font-size: 300;
+  color: #1D1F22;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.productData span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1D1F22;
+    margin-top: 10px;
+    display: block;
+}
