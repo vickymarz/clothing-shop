@@ -11,18 +11,23 @@ const CartStore = ({ cloth }) => {
   const productSize = cloth.map(({
     sizes, id, brand, amount,
   }) => (
-    <>
-      <ProductDescriptions key={id} brand={brand} amount={amount} />
-      {
-    sizes.map((size) => (
-      <>
-        <div key={Math.random()}>
-          <span>{size}</span>
+    <div key={id} className={styles.descriptions}>
+      <div className={styles.productData}>
+        <ProductDescriptions key={id} brand={brand} amount={amount} />
+        <p className={styles.sizeTitle}>Size:</p>
+        <div className={styles.productSize}>
+          {
+            sizes.map((size) => (
+              <>
+                <span key={Math.random()}>
+                  {size}
+                </span>
+              </>
+            ))
+          }
         </div>
-      </>
-    ))
-  }
-    </>
+      </div>
+    </div>
   ));
 
   return (
@@ -31,28 +36,22 @@ const CartStore = ({ cloth }) => {
         <span className={styles.heading}>My Bag</span>
         ,3 items
       </div>
-      <div className={styles.description}>
-        <div className={styles.containerTexts}>
-          <div className={styles.productData}>
-            { productSize }
-          </div>
-          <div>
-            <p>color:</p>
-            <span>
-              <Input type="color" value="red" />
-            </span>
-            <span>
-              <Input type="color" value="red" />
-            </span>
-            <span>
-              <Input type="color" value="red" />
-            </span>
-          </div>
-        </div>
-        <div className={styles.imageCounter}>
-          <Counter />
-          <ProductImage />
-        </div>
+      { productSize }
+      <div>
+        <h3>color:</h3>
+        <span>
+          <Input type="color" value="red" />
+        </span>
+        <span>
+          <Input type="color" value="red" />
+        </span>
+        <span>
+          <Input type="color" value="red" />
+        </span>
+      </div>
+      <div className={styles.imageCounter}>
+        <Counter />
+        <ProductImage />
       </div>
       <div>
         <span>Total</span>

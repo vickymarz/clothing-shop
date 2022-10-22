@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 .wrapper {
     position: absolute;
     width: 100%;
@@ -13,24 +15,24 @@
     margin-top: 32px;
     font-size: 16px;
     color: #1D1F22;
-    margin-bottom: 32px;
 }
 
 .heading {
     font-weight: 700;
 }
 
-.description {
+.descriptions {
     display: flex;
     justify-content: space-between;
+    margin-top: 32px;
 }
 
 .productData p {
   font-weight: 300;
-  font-size: 300;
-  color: #1D1F22;
   font-size: 16px;
+  color: #1D1F22;
   line-height: 26px;
+  width: 100px;
 }
 
 .productData span {
@@ -39,4 +41,33 @@
     color: #1D1F22;
     margin-top: 10px;
     display: block;
+}
+
+.sizeTitle {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1D1F22
+}
+
+.productSize {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.productSize span {
+    border: 1px solid #1D1F22;
+    text-align: center;
+    width: 32px;
+    padding: 5px 0;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;;
+    font-weight: 400;
+}
+
+.productSize span:hover {
+    background-color: #1D1F22;
+    color: white;
 }
