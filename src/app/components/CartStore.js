@@ -8,23 +8,21 @@ import ProductImage from './ProductImage';
 import styles from '../../css/cartStore.module.css';
 
 const CartStore = ({ cloth }) => {
-  const clothLists = () => {
-    const productSize = cloth.map(({ sizes }) => (
-      sizes.map((size) => (
-        <>
-          <div key={Math.random()}>
-            <span>{size}</span>
-          </div>
-        </>
-      ))
-    ));
-    return productSize;
-  };
-
-  const clothList = cloth.map(({
-    id, brand, amount,
+  const productSize = cloth.map(({
+    sizes, id, brand, amount,
   }) => (
-    <ProductDescriptions key={id} brand={brand} amount={amount} />
+    <>
+      <ProductDescriptions key={id} brand={brand} amount={amount} />
+      {
+    sizes.map((size) => (
+      <>
+        <div key={Math.random()}>
+          <span>{size}</span>
+        </div>
+      </>
+    ))
+  }
+    </>
   ));
 
   return (
@@ -36,13 +34,7 @@ const CartStore = ({ cloth }) => {
       <div className={styles.description}>
         <div className={styles.containerTexts}>
           <div className={styles.productData}>
-            {clothList}
-          </div>
-          <div>
-            <p>size:</p>
-            <div>
-              { clothLists() }
-            </div>
+            { productSize }
           </div>
           <div>
             <p>color:</p>
