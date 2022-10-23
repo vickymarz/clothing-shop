@@ -9,12 +9,12 @@ import styles from '../../css/cartStore.module.css';
 
 const CartStore = ({ cloth }) => {
   const productSize = cloth.map(({
-    sizes, id, brand, amount,
+    sizes, id, brand, amount, colors,
   }) => (
     <div key={id} className={styles.descriptions}>
       <div className={styles.productData}>
         <ProductDescriptions key={id} brand={brand} amount={amount} />
-        <p className={styles.sizeTitle}>Size:</p>
+        <p className={styles.headings}>Size:</p>
         <div className={styles.productSize}>
           {
             sizes.map((size) => (
@@ -25,6 +25,18 @@ const CartStore = ({ cloth }) => {
               </>
             ))
           }
+          <p className={styles.headings}>color:</p>
+          <div className={styles.productColor}>
+            {
+              colors.map((color) => (
+                <>
+                  <span key={Math.random()}>
+                    <Input type="color" value={color} />
+                  </span>
+                </>
+              ))
+            }
+          </div>
         </div>
       </div>
     </div>
@@ -38,7 +50,7 @@ const CartStore = ({ cloth }) => {
       </div>
       { productSize }
       <div>
-        <h3>color:</h3>
+
         <span>
           <Input type="color" value="red" />
         </span>

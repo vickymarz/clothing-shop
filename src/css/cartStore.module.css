@@ -43,14 +43,14 @@
     display: block;
 }
 
-.sizeTitle {
+.headings {
   margin-top: 8px;
   font-weight: 400;
   font-size: 14px;
   color: #1D1F22
 }
 
-.productSize {
+.productSize, .productColor {
     display: flex;
     gap: 8px;
     justify-content: flex-start;
