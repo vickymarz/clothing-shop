@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 .wrapper {
     position: absolute;
     width: 100%;
     min-width: 325px;
     right: -15px;
     top: 50px;
-    height: 677px;
     background-color: yellow;
     padding: 0 16px;
 }
@@ -101,5 +100,22 @@
     min-width: 115px;
     height: 100%;
     object-fit: cover;
+}
+
+.cost {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.amount {
+ font-weight: 700;
+ font-size: 16px;
 }
 

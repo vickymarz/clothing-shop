@@ -55,9 +55,9 @@ const CartStore = ({ cloth }) => {
         ,3 items
       </div>
       { productSize }
-      <div>
-        <span>Total</span>
-        <span>$200</span>
+      <div className={styles.cost}>
+        <span className={styles.total}>Total</span>
+        <span className={styles.amount}>$200</span>
       </div>
       <div>
         <Button>
