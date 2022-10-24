@@ -1,40 +1,26 @@
 .row {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.row > button {
-  margin-left: 4px;
-  margin-right: 8px;
-}
-
-.row:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.value {
-  font-size: 78px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 2px;
-  font-family: 'Courier New', Courier, monospace;
+  justify-content: space-between;
 }
 
 .button {
-  appearance: none;
   background: none;
-  font-size: 32px;
-  padding-left: 12px;
-  padding-right: 12px;
+  font-size: 24px;
+  width: 28px;
+  font-weight: 300;
   outline: none;
-  border: 2px solid transparent;
-  color: rgb(112, 76, 182);
-  padding-bottom: 4px;
+  border: 1px solid #1D1F22;
   cursor: pointer;
-  background-color: rgba(112, 76, 182, 0.1);
-  border-radius: 2px;
-  transition: all 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .textbox {

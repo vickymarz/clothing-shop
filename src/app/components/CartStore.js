@@ -41,6 +41,7 @@ const CartStore = ({ cloth }) => {
           }
         </div>
       </div>
+      <Counter />
     </div>
   ));
 
@@ -52,7 +53,6 @@ const CartStore = ({ cloth }) => {
       </div>
       { productSize }
       <div className={styles.imageCounter}>
-        <Counter />
         <ProductImage />
       </div>
       <div>
