@@ -11,7 +11,7 @@
   width: 28px;
   font-weight: 300;
   outline: none;
-  border: 1px solid #1D1F22;
+  border: 1px solid #1d1f22;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -22,4 +22,3 @@
   font-size: 16px;
   font-weight: 500;
 }
-
