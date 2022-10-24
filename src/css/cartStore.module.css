@@ -119,3 +119,27 @@
  font-size: 16px;
 }
 
+.buttonWrapper {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 16px 28px;
+    outline: none;
+    margin: 32px 0;
+}
+
+.view {
+    background: #FFFFFF;
+    border: 1px solid #1D1F22;
+}
+
+.checkout {
+    background: #5ECE7B;
+    border: none;
+    color: #FFFFFF;
+}

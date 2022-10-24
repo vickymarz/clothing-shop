@@ -59,11 +59,11 @@ const CartStore = ({ cloth }) => {
         <span className={styles.total}>Total</span>
         <span className={styles.amount}>$200</span>
       </div>
-      <div>
-        <Button>
+      <div className={styles.buttonWrapper}>
+        <Button className={`${styles.view} ${styles.button}`}>
           VIEW BAG
         </Button>
-        <Button>
+        <Button className={`${styles.checkout} ${styles.button}`}>
           CHECK OUT
         </Button>
       </div>
