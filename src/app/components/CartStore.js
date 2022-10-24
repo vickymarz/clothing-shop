@@ -11,7 +11,7 @@ const CartStore = ({ cloth }) => {
   const inputRef = useRef();
 
   const productSize = cloth.map(({
-    sizes, id, brand, amount, colors,
+    sizes, id, brand, amount, colors, product,
   }) => (
     <div key={id} className={styles.descriptions}>
       <div className={styles.productData}>
@@ -41,7 +41,10 @@ const CartStore = ({ cloth }) => {
           }
         </div>
       </div>
-      <Counter />
+      <div className={styles.imageCounter}>
+        <Counter />
+        <ProductImage brand={brand} product={product} className={styles.productImg} />
+      </div>
     </div>
   ));
 
@@ -52,9 +55,6 @@ const CartStore = ({ cloth }) => {
         ,3 items
       </div>
       { productSize }
-      <div className={styles.imageCounter}>
-        <ProductImage />
-      </div>
       <div>
         <span>Total</span>
         <span>$200</span>

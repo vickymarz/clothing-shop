@@ -25,6 +25,14 @@
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+    gap: 20px;
+    width: 70%;
+}
+
+.imageCounter {
+    display: flex;
+    width: 30%;
+    gap: 8px;
 }
 
 .productData p {
@@ -61,8 +69,8 @@
 .productSize span {
     border: 1px solid #1D1F22;
     text-align: center;
-    width: 32px;
-    padding: 5px 0;
+    width: 24px;
+    padding: 2px 0;
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;;
     font-weight: 400;
@@ -86,5 +94,12 @@
 
 .input::-webkit-color-swatch {
 	border: none;
+}
+
+.productImg {
+    width: 100%;
+    min-width: 115px;
+    height: 100%;
+    object-fit: cover;
 }
 
