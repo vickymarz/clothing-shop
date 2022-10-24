@@ -27,7 +27,7 @@ Input.propTypes = {
 Input.defaultProps = {
   className: '',
   innerRef: null,
-  onChange: '',
+  onChange: null,
 };
 
 export default Input;
