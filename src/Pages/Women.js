@@ -8,17 +8,17 @@ const Women = ({ cloth }) => {
   const clothList = cloth.map(({
     id, brand, amount, product,
   }) => (
-    <>
-      <ProductImage key={id} product={product} />
-      <ProductDescriptions key={id} brand={brand} amount={amount} />
-    </>
+    <div key={id} className="cloths">
+      <ProductImage product={product} className="productImg" />
+      <ProductDescriptions brand={brand} amount={amount} />
+    </div>
   ));
 
   return (
-    <>
+    <main className="main">
       <CategoryName />
-      <div>{clothList}</div>
-    </>
+      <div className="clothList">{clothList}</div>
+    </main>
   );
 };
 

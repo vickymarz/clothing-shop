@@ -13,7 +13,6 @@ const Cart = ({ cloth }) => {
 
   const handleCartPopup = () => {
     setIsCartOpen(!isCartOpen);
-    console.log(isCartOpen);
   };
 
   return (

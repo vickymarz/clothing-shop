@@ -32,3 +32,33 @@ li {
 .colorpick-eyedropper-input-trigger {
   display: none;
 }
+
+/* style all cloth pages */
+
+.main {
+  padding: 0 5%;
+}
+
+.clothList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  margin: 100px 0;
+}
+
+.productImg {
+  width: 100%;
+}
+
+.cloths p {
+  font-weight: 300;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.cloths span {
+  font-weight: 500;
+  font-size: 18px;
+}
