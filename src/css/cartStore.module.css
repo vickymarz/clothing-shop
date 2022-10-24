@@ -55,6 +55,7 @@
     gap: 8px;
     justify-content: flex-start;
     align-items: center;
+    margin-top: -8px;
 }
 
 .productSize span {
@@ -71,3 +72,20 @@
     background-color: #1D1F22;
     color: white;
 }
+
+.input {
+	-webkit-appearance: none;
+	border: none;
+    outline: none;
+	width: 16px;
+	height: 16px;
+}
+
+.input::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+.input::-webkit-color-swatch {
+	border: none;
+}
+

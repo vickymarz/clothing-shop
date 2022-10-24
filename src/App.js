@@ -14,7 +14,7 @@ const cloth = [
     amount: '$50.00',
     product: clothImg,
     sizes: ['XS', 'S', 'M', 'L'],
-    colors: ['red', 'green', 'blue'],
+    colors: ['#D3D2D5', '#2B2B2B', '#0F6450'],
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const cloth = [
     amount: '$50.00',
     product: clothImg,
     sizes: ['S', 'M'],
-    colors: ['purple', 'grey', 'purple'],
+    colors: ['#2B2B2B', '#15A4C3', '#EA8120'],
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const cloth = [
     amount: '$50.00',
     product: clothImg,
     sizes: ['S', 'M', 'L'],
-    colors: ['red', 'pink', 'black'],
+    colors: ['#ff0000', '#EA8120', '#2B2B2B'],
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const cloth = [
     amount: '$50.00',
     product: clothImg,
     sizes: ['XS', 'L'],
-    colors: ['purple', 'green', 'indigo'],
+    colors: ['#EA8120', '#00ff00', '#D3D2D5'],
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const cloth = [
     amount: '$50.00',
     product: clothImg,
     sizes: ['XS', 'M', 'L'],
-    colors: ['blue', 'orange', 'yellow'],
+    colors: ['#0000ff', '#0F6450', '#15A4C3'],
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const cloth = [
     amount: '$50.00',
     product: clothImg,
     sizes: ['L'],
-    colors: ['red', 'violet', 'black'],
+    colors: ['#ff0000', '#EA8120', '#2B2B2B'],
   },
 ];
 

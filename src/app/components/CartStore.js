@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 import Counter from './Counter';
@@ -8,6 +8,8 @@ import ProductImage from './ProductImage';
 import styles from '../../css/cartStore.module.css';
 
 const CartStore = ({ cloth }) => {
+  const inputRef = useRef();
+
   const productSize = cloth.map(({
     sizes, id, brand, amount, colors,
   }) => (
@@ -25,18 +27,18 @@ const CartStore = ({ cloth }) => {
               </>
             ))
           }
-          <p className={styles.headings}>color:</p>
-          <div className={styles.productColor}>
-            {
-              colors.map((color) => (
-                <>
-                  <span key={Math.random()}>
-                    <Input type="color" value={color} />
-                  </span>
-                </>
-              ))
-            }
-          </div>
+        </div>
+        <p className={styles.headings}>color:</p>
+        <div className={styles.productColor}>
+          {
+            colors.map((color) => (
+              <>
+                <span key={Math.random()}>
+                  <Input type="color" value={color} className={styles.input} innerRef={inputRef} disabled />
+                </span>
+              </>
+            ))
+          }
         </div>
       </div>
     </div>
@@ -49,18 +51,6 @@ const CartStore = ({ cloth }) => {
         ,3 items
       </div>
       { productSize }
-      <div>
-
-        <span>
-          <Input type="color" value="red" />
-        </span>
-        <span>
-          <Input type="color" value="red" />
-        </span>
-        <span>
-          <Input type="color" value="red" />
-        </span>
-      </div>
       <div className={styles.imageCounter}>
         <Counter />
         <ProductImage />
