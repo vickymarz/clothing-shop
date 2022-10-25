@@ -11,7 +11,13 @@ const ClothList = ({ cloth }) => {
     id, brand, amount, product,
   }) => (
     <div key={id}>
-      <Link to={`/details/${id}`} state={[id, brand, amount, product]} className="cloths">
+      <Link
+        to={`/details/${id}`}
+        state={{
+          id, brand, amount, product,
+        }}
+        className="cloths"
+      >
         <ProductImage product={product} brand={brand} className="productImg" />
         <ProductDescriptions brand={brand} amount={amount} />
         <Button type="button" className="hoverButton">

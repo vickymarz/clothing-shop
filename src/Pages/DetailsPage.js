@@ -11,6 +11,7 @@ const DetailsPage = ({ cloth }) => {
   let shirts = cloth.find((clothId) => parseInt(clothId.id, 10) === parseInt(id, 10));
   localStorage.setItem('products', JSON.stringify(state));
   shirts = JSON.parse(localStorage.getItem('products'));
+  console.log(shirts.product);
 
   return (
     <div className="main">
