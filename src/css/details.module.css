@@ -1,0 +1,13 @@
+.shirts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.image {
+    width: 176.65px;
+    height: 87.61px;
+    object-fit: cover;
+}

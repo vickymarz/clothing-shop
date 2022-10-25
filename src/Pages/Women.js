@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import CategoryName from '../app/components/CategoryName';
-import ClothLists from '../app/components/ClothLists';
+import ClothList from '../app/components/ClothList';
 
 const Women = ({ cloth }) => (
   <main className="main">
     <CategoryName />
     <div className="clothList">
-      <ClothLists cloth={cloth} />
+      <ClothList cloth={cloth} />
     </div>
   </main>
 );
