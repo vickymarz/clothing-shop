@@ -5,6 +5,8 @@ import Input from '../app/components/Input';
 import ProductDescriptions from '../app/components/ProductDescriptions';
 import ProductImage from '../app/components/ProductImage';
 import styles from '../css/cartStore.module.css';
+import style from '../css/cartPage.module.css';
+import Button from '../app/components/Button';
 
 const CartPage = ({ cloth }) => {
   const productSize = cloth.map(({
@@ -47,6 +49,25 @@ const CartPage = ({ cloth }) => {
   return (
     <div className="main">
       { productSize }
+      <div className={style.audit}>
+        <p>
+          Tax 21%
+          <span>$42.00</span>
+        </p>
+        <p>
+          Quantity
+          <span>3</span>
+        </p>
+        <p>
+          Total
+          <span>$200</span>
+        </p>
+        <div className={styles.buttonWrapper}>
+          <Button className={`${styles.checkout} ${styles.button}`}>
+            ORDER
+          </Button>
+        </div>
+      </div>
     </div>
   );
 };
