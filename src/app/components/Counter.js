@@ -1,7 +1,9 @@
 import React from 'react';
+import Button from './Button';
+import styles from '../../css/Counter.module.css';
 
 const Counter = () => (
-  <div>
+  <div className={styles.row}>
     {/* <div className={styles.row}>
       <button
         className={styles.button}
@@ -45,7 +47,20 @@ const Counter = () => (
         Add If Odd
       </button>
     </div> */}
-    counter
+    <Button
+      type="button"
+      className={styles.button}
+      label="Increment value"
+    >
+      +
+    </Button>
+    <span className={styles.value}>{2}</span>
+    <Button
+      className={styles.button}
+      label="Decrement value"
+    >
+      -
+    </Button>
   </div>
 );
 

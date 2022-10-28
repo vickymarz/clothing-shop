@@ -10,6 +10,9 @@
 
 html {
   font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #1d1f22;
+  font-weight: 400;
 }
 
 body {
@@ -18,7 +21,83 @@ body {
   background-color: #fff;
 }
 
-nav {
-  width: 90%;
-  margin: auto;
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.colorpick-eyedropper-input-trigger {
+  display: none;
+}
+
+/* style all cloth pages */
+
+.main {
+  padding: 0 5%;
+}
+
+.clothList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  margin: 100px 0;
+}
+
+.productImg {
+  width: 100%;
+}
+
+.cloths {
+  position: relative;
+}
+
+.hoverButton {
+  position: absolute;
+  bottom: 30px;
+  right: 31px;
+  background: #5ece7b;
+  padding: 24px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+.cloths p {
+  font-weight: 300;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.cloths span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.cloths:hover .hoverButton {
+  display: block;
+}
+
+.cloths:hover {
+  box-shadow: 0 4px 35px rgba(168, 172, 176, 0.19);
+  background: #fff;
+}
+
+.cloths:hover .productImg {
+  padding: 16px;
+}
+
+.cloths:hover p {
+  padding: 0 16px;
+}
+
+.cloths:hover span {
+  padding: 0 16px;
 }

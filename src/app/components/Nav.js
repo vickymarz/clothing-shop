@@ -7,17 +7,17 @@ const Nav = () => {
     {
       id: 1,
       path: '/',
-      children: 'Women',
+      children: 'WOMEN',
     },
     {
       id: 2,
       path: 'men',
-      children: 'Men',
+      children: 'MEN',
     },
     {
       id: 3,
       path: 'kids',
-      children: 'Kids',
+      children: 'KIDS',
     },
   ];
 
@@ -35,7 +35,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <ul>
+      <ul className={styles.listContainer}>
         {navigation}
       </ul>
     </nav>

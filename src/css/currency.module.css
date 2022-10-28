@@ -1,0 +1,65 @@
+/* .wrapper {
+    display: flex;
+    justify-content: center;
+  } */
+
+.container {
+  position: relative;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background: none;
+  width: 50%;
+  position: relative;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button::after {
+  position: absolute;
+  left: 15px;
+  top: -3px;
+  content: url(../assets/images/arrow-down.png);
+}
+
+.expanded::after {
+  position: absolute;
+  right: -15px;
+  top: -3px;
+  content: url(../assets/images/arrow-up.png);
+}
+
+.options {
+  border: none;
+  display: none;
+  width: 100px;
+  list-style: none;
+  text-align: center;
+  top: 30px;
+  left: -20px;
+  position: absolute;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), -3px -3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.show {
+  display: block;
+}
+
+.list {
+  padding: 10px;
+  color: #1d1f22;
+  padding-right: 30px;
+}
+
+.list:active,
+.list:focus,
+.list:hover,
+.list[aria-selected="true"] {
+  background: #eee;
+  cursor: pointer;
+  color: #1d1f22;
+}

@@ -1,0 +1,17 @@
+.header {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  background: white;
+}
+
+.purchase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
