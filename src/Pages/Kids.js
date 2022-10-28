@@ -1,26 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CategoryName from '../app/components/CategoryName';
-import ProductDescriptions from '../app/components/ProductDescriptions';
-import ProductImage from '../app/components/ProductImage';
+import ClothList from '../app/components/ClothList';
 
-const Kids = ({ cloth }) => {
-  const clothList = cloth.map(({
-    id, brand, amount, product,
-  }) => (
-    <div key={id} className="cloths">
-      <ProductImage product={product} />
-      <ProductDescriptions brand={brand} amount={amount} />
+const Kids = ({ cloth }) => (
+  <main className="main">
+    <CategoryName />
+    <div className="clothList">
+      <ClothList cloth={cloth} />
     </div>
-  ));
-
-  return (
-    <main className="main">
-      <CategoryName />
-      <div className="clothList">{clothList}</div>
-    </main>
-  );
-};
+  </main>
+);
 
 Kids.propTypes = {
   cloth: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])).isRequired,
