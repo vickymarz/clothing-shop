@@ -60,34 +60,14 @@ li {
   position: absolute;
   bottom: 30px;
   right: 31px;
-  background: #5ECE7B;
+  background: #5ece7b;
   padding: 24px;
   border-radius: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   outline: none;
   display: none;
-}
-
-.cloths:hover .hoverButton {
-  display: block;
-}
-
-.cloths:hover {
-  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
-  background: #FFFFFF;
-}
-
-.cloths:hover .productImg {
-  padding: 16px;
-}
-.cloths:hover p {
-  padding: 0 16px;
-}
-.cloths:hover span  {
-  padding: 0 16px;
 }
 
 .cloths p {
@@ -99,4 +79,25 @@ li {
 .cloths span {
   font-weight: 500;
   font-size: 18px;
+}
+
+.cloths:hover .hoverButton {
+  display: block;
+}
+
+.cloths:hover {
+  box-shadow: 0 4px 35px rgba(168, 172, 176, 0.19);
+  background: #fff;
+}
+
+.cloths:hover .productImg {
+  padding: 16px;
+}
+
+.cloths:hover p {
+  padding: 0 16px;
+}
+
+.cloths:hover span {
+  padding: 0 16px;
 }
