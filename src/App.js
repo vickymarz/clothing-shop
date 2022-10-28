@@ -7,6 +7,7 @@ import Men from './Pages/Men';
 import Women from './Pages/Women';
 import clothImg from './assets/images/product.png';
 import DetailsPage from './Pages/DetailsPage';
+import CartPage from './Pages/CartPage';
 
 const cloth = [
   {
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
       {
         path: '/details/:id',
         element: <DetailsPage cloth={cloth} />,
+      },
+      {
+        path: 'cart',
+        element: <CartPage cloth={cloth} />,
       },
     ],
   },

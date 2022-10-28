@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import Counter from './Counter';
 import Input from './Input';
@@ -49,7 +50,7 @@ const CartStore = ({ cloth }) => {
   ));
 
   return (
-    <div className={styles.wrapper}>
+    <Link to="./cart" className={styles.wrapper}>
       <div className={styles.cartTitle}>
         <span className={styles.heading}>My Bag</span>
         ,3 items
@@ -67,7 +68,7 @@ const CartStore = ({ cloth }) => {
           CHECK OUT
         </Button>
       </div>
-    </div>
+    </Link>
   );
 };
 
