@@ -8,13 +8,13 @@ import Button from './Button';
 
 const ClothList = ({ cloth }) => {
   const clothLists = cloth.map(({
-    id, brand, amount, product,
+    id, brand, amount, product, sizes, colors,
   }) => (
     <div key={id}>
       <Link
         to={`/details/${id}`}
         state={{
-          id, brand, amount, product,
+          id, brand, amount, product, sizes, colors,
         }}
         className="cloths"
       >

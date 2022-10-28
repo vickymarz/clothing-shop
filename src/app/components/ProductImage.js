@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ProductImage = ({ brand, product, className }) => (
-  <div>
-    <img src={product} alt={brand} className={className} />
-  </div>
+  <img src={product} alt={brand} className={className} />
 );
 
 ProductImage.propTypes = {
